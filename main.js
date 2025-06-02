@@ -50,7 +50,6 @@ const languages = Object.keys(sheet[0]).filter(col => col !== 'key' && col !== '
 
 const languageData = {};
 languages.forEach(lang => languageData[lang] = {});
-languages.forEach(lang => languageData[lang] = {});
 
 sheet.forEach(row => {
     const { key, file } = row;
