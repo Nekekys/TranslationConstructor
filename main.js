@@ -77,7 +77,7 @@ languages.forEach(lang => {
     Object.entries(languageData[lang]).forEach( file => {
         const fileContent =
             `enum Data {
-  ${Object.entries(file[1]).map(([k, v]) => `${k} = ${JSON.stringify(v)},`).join('\n  ')} 
+  ${Object.entries(file[1]).map(([k, v]) => `${k} = ${JSON.stringify(v)},`).join('\n  ')}
 }
 
 export default Data;
